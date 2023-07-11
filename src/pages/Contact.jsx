@@ -10,7 +10,7 @@ export const Contact = () => {
         </p>
 
         <div className="mt-5">
-          <div className="flex items-center gap-5">
+          <div className=" md:flex items-center gap-5">
             {/* Location */}
             <div className="p-5 rounded-full shadow-mmd flex items-center justify-center gap-5 ">
               <div className="w-[40px]">
@@ -26,7 +26,7 @@ export const Contact = () => {
               </div>
             </div>
             {/* Email */}
-            <div className="p-5 rounded-full shadow-mmd flex items-center justify-center gap-5 ">
+            <div className="p-5 rounded-full shadow-mmd flex items-center justify-center gap-5 sm:mt-5 md:mt-0 ">
               <div className="w-[40px]">
                 <img
                   className="w-full h-full object-cover"
