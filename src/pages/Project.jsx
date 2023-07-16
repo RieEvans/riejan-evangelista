@@ -56,7 +56,7 @@ export const Projects = () => {
 
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
-            <a className="" href="" target="_blank">
+            <a className="" href="https://todo-app-five-opal.vercel.app/" target="_blank">
               <div className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd"
