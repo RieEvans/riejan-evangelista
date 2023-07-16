@@ -15,7 +15,7 @@ export const Projects = () => {
               <div className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd"
-                  src="/images/proj2.png"
+                  src="/images/proj1.png"
                   alt=""
                 />
               </div>
@@ -68,12 +68,13 @@ export const Projects = () => {
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
-              Booking Website 📖
+              Todo App 🖊️
             </h1>
             <p className="text-center text-gray-500">
-              Booking Website Landing Page. The website provides an interface
-              for searching and viewing places around the world especially
-              Philippines .
+            The todo app developed with React.js and local storage provides a streamlined and intuitive user experience for task management. 
+            With the help of React.js, the app offers real-time updates and a responsive interface, ensuring smooth task organization. 
+            By utilizing local storage, 
+            tasks are securely stored in the user's browser, allowing for persistence and easy access to tasks across sessions.
             </p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md">React</span>
@@ -82,13 +83,13 @@ export const Projects = () => {
             <div className="flex gap-5 items-center justify-center">
               <a
                 className="flex font-semibold items-center justify-between gap-2"
-                href="https://github.com/RieEvans/Wayfarer"
+                href="https://github.com/RieEvans/TodoApp"
                 target="_blank">
                 Code <i className="fa-brands fa-github text-2xl"></i>
               </a>
               <a
                 className="flex font-semibold items-center justify-between gap-2 "
-                href="https://wayfarer-beta.vercel.app/"
+                href="https://todo-app-five-opal.vercel.app/"
                 target="_blank">
                 Live Demo{" "}
                 <i className="fa-solid fa-share-from-square text-2xl"></i>
@@ -139,7 +140,7 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-
+        {/* 4th Project */}
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="" target="_blank">
