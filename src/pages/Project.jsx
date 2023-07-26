@@ -53,7 +53,7 @@ export const Projects = () => {
         </div>
 
         {/* 2nd Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex  items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://cartimar.vercel.app/" target="_blank">
               <div className="w-full">
@@ -96,7 +96,7 @@ export const Projects = () => {
 
         
         {/* 3rd Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl shadow-md xl:flex  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://todo-app-five-opal.vercel.app/" target="_blank">
               <div className="w-full">
@@ -183,12 +183,12 @@ export const Projects = () => {
         </div>
 
         {/* 5th Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://rieevans.github.io/jobportal.github.io/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl "
+                  className="w-full h-full object-cover rounded-xl shadow-mmd "
                   src="/images/proj5.png"
                   alt=""
                 />

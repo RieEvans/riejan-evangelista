@@ -21,7 +21,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        'mmd':'-1px 0px 5px 2px rgba(0,0,0,0.75)',
+        'mmd':'7px 4px 0px 0px rgba(0,0,0,0.75);',
         '3xl':'0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
       animation: {
