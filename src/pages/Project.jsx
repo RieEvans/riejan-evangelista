@@ -14,7 +14,7 @@ export const Projects = () => {
             <a className="" href="https://wayfarer-beta.vercel.app/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl shadow-mmd"
+                  className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj1.png"
                   alt=""
                 />
@@ -31,8 +31,8 @@ export const Projects = () => {
               Philippines .
             </p>
             <div className="flex gap-5 justify-center">
-              <span className="shadow-mmd px-5 py-2 rounded-md">React</span>
-              <span className="shadow-mmd px-5 py-2 rounded-md">Tailwind</span>
+              <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">React</span>
+              <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">Tailwind</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a
@@ -58,7 +58,7 @@ export const Projects = () => {
             <a className="" href="https://cartimar.vercel.app/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl shadow-mmd"
+                  className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj3.png"
                   alt=""
                 />
@@ -73,8 +73,8 @@ export const Projects = () => {
               E-Commerce website built with Tailwind and React JS. Provides a user interface with an interactive and functionality display.
             </p>
             <div className="flex gap-5 justify-center">
-              <span className="shadow-mmd px-5 py-2 rounded-md">React</span>
-              <span className="shadow-mmd px-5 py-2 rounded-md">Tailwind</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a
@@ -101,7 +101,7 @@ export const Projects = () => {
             <a className="" href="https://todo-app-five-opal.vercel.app/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl "
+                  className="w-full h-full object-cover rounded-xl border-t border-l border-slate-600 "
                   src="/images/proj2.png"
                   alt=""
                 />
@@ -119,8 +119,8 @@ export const Projects = () => {
             tasks are securely stored in the user's browser, allowing for persistence and easy access to tasks across sessions.
             </p>
             <div className="flex gap-5 justify-center">
-              <span className="shadow-mmd px-5 py-2 rounded-md">React</span>
-              <span className="shadow-mmd px-5 py-2 rounded-md">Tailwind</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a
@@ -146,7 +146,7 @@ export const Projects = () => {
             <a className="" href="https://beshify-beta.vercel.app/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl "
+                  className="w-full h-full object-cover rounded-xl  "
                   src="/images/proj4.png"
                   alt=""
                 />
@@ -161,8 +161,8 @@ export const Projects = () => {
               Trending meme that converted it into a website. Auto Generated Emoji.
             </p>
             <div className="flex gap-5 justify-center">
-              <span className="shadow-mmd px-5 py-2 rounded-md">React</span>
-              <span className="shadow-mmd px-5 py-2 rounded-md">Tailwind</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a
@@ -188,7 +188,7 @@ export const Projects = () => {
             <a className="" href="https://rieevans.github.io/jobportal.github.io/" target="_blank">
               <div className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl shadow-mmd "
+                  className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj5.png"
                   alt=""
                 />
@@ -203,8 +203,8 @@ export const Projects = () => {
               Landing page for Job hunt. Built with HTML CSS and JS
             </p>
             <div className="flex gap-5 justify-center">
-              <span className="shadow-mmd px-5 py-2 rounded-md">HTML CSS</span>
-              <span className="shadow-mmd px-5 py-2 rounded-md">JAVASCRIPT</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600 ">HTML CSS</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">JAVASCRIPT</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a

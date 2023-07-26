@@ -7,7 +7,7 @@ export const About = () => {
         <div className="flex justify-center items-center">
           <div className="w-full relative ">
             <img
-              className="w-full h-full rounded-xl h-full shadow-mmd "
+              className="w-full h-full rounded-xl h-full shadow-mmd border-t border-l border-slate-600 "
               src="/images/about.jpeg"
               alt=""
             />
