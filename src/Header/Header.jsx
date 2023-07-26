@@ -20,7 +20,7 @@ export const Header = () => {
     <div className="">
       <header className="fixed top-0 bg-white shadow-md w-full z-50">
         <div className="flex items-center justify-between sm:px-5 md:px-20 py-5 ">
-          <h1 className="font-bold text-slate-900 text-2xl">Riejan.dev ⚙️</h1>
+          <a href="#home" className="font-bold text-slate-900 text-2xl">Riejan.dev ⚙️</a>
           <nav className="md:flex items-center justify-between sm:hidden  gap-5 text-slate-900 font-semibold">
           <a href="#home">
             <i className="fa-solid fa-house-user"></i> Home
