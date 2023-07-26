@@ -41,7 +41,7 @@ export const Home = () => {
           <div className="rounded-full sm:w-[300px] xl:w-[300px]  relative">
             
             <img
-              className="profile w-full shadow-mmd z-50 h-full object-cover"
+              className="profile w-full border-2 border-slate-900 z-50 h-full object-cover"
               src="/profile.jpg"
               alt=""
             />
