@@ -25,12 +25,26 @@ export default {
         '3xl':'0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
+        'spin-slow': 'spin 4s linear infinite',
         'animate': 'animate 5s ease-in-out infinite',
         'transition':'all 1s ease-in-out',
+        'blob':'blob 5s ease-in-out infinite',
+        wiggle: 'wiggle 0.7s ease-in-out infinite',
+
+      
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        blob: {
+          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' }, // Removed percentage symbols (%)
+          '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' }, // Removed percentage symbols (%)
+          '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' }, // Removed percentage symbols (%)
+        }
 
       },
-      
       
     },
   },

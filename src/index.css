@@ -35,10 +35,10 @@ body {
 }
 
 .profile {
-  animation: animate 5s ease-in-out infinite;
+  animation: blob 5s ease-in-out infinite;
 }
 
-@keyframes animate {
+@keyframes blob {
   0%{
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }

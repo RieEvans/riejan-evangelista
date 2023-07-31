@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export const Header = () => {
   
@@ -16,11 +17,24 @@ export const Header = () => {
       document.removeEventListener("mouseover", handler)
     }
   })
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
   return (
     <div className="">
+      <motion.div style={{scaleX}} className="fixed left-0 right-0 bottom-0 h-[4px] z-50 bg-indigo-600">
+        <h1>
+          <code>useScroll</code>
+        </h1>
+      </motion.div> {/* Scroll Line Progress */}
+
       <header className="fixed top-0 bg-white shadow-md w-full z-50">
         <div className="flex items-center justify-between sm:px-5 md:px-20 py-5 ">
-          <a href="#home" className="font-bold text-slate-900 text-2xl">Riejan.dev ⚙️</a>
+          <a href="#home" className="font-bold text-slate-900 text-2xl relative">riejan.dev <p className="animate-spin-slow absolute top-0 right-[-35px]">⚙️</p></a>
           <nav className="md:flex items-center justify-between sm:hidden  gap-5 text-slate-900 font-semibold">
           <a href="#home">
             <i className="fa-solid fa-house-user"></i> Home

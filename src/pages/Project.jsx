@@ -1,35 +1,36 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="xl:h-full py-20 bg-zinc-100">
-      <div className="m-auto sm:w-[90%] md:w-[60%]">
+    <section id="projects" className="xl:h-full py-20 bg-slate-50">
+      <div className="m-auto sm:w-[90%] md:w-[60%] snap-x">
         <h1 className="text-md font-bold text-blue-500 uppercase">Projects</h1>
         <h2 className="text-2xl font-bold text-slate-900 mt-5">
           Each Project has a unique piece of development 🧩
         </h2>
         {/* First Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10  gap-5 mt-10">
           <div className="">
             <a className="" href="https://wayfarer-beta.vercel.app/" target="_blank">
-              <div className="w-full">
+              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj1.png"
                   alt=""
                 />
-              </div>
+              </motion.div>
             </a>
           </div>
-          <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
+          <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5">
             <h1 className="text-center font-bold text-[20px] ">
               Booking Website 📖
             </h1>
-            <p className="text-center text-gray-500">
+            <motion.p initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
               Booking Website Landing Page. The website provides an interface
               for searching and viewing places around the world especially
               Philippines .
-            </p>
+            </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">React</span>
               <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">Tailwind</span>
@@ -56,22 +57,22 @@ export const Projects = () => {
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://cartimar.vercel.app/" target="_blank">
-              <div className="w-full">
+              <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj3.png"
                   alt=""
                 />
-              </div>
+              </motion.div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
               Add to Cart Website 🛒
             </h1>
-            <p className="text-center text-gray-500">
+            <motion.p initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
               E-Commerce website built with Tailwind and React JS. Provides a user interface with an interactive and functionality display.
-            </p>
+            </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
@@ -99,25 +100,23 @@ export const Projects = () => {
         <div className="bg-white rounded-xl shadow-md xl:flex  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://todo-app-five-opal.vercel.app/" target="_blank">
-              <div className="w-full">
+              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl border-t border-l border-slate-600 "
                   src="/images/proj2.png"
                   alt=""
                 />
-              </div>
+              </motion.div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
               Todo App 🖊️
             </h1>
-            <p className="text-center text-gray-500">
+            <motion.p initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
             The todo app developed with React.js and local storage provides a streamlined and intuitive user experience for task management. 
-            With the help of React.js, the app offers real-time updates and a responsive interface, ensuring smooth task organization. 
-            By utilizing local storage, 
-            tasks are securely stored in the user's browser, allowing for persistence and easy access to tasks across sessions.
-            </p>
+            With the help of React.js.
+            </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
@@ -144,22 +143,22 @@ export const Projects = () => {
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://beshify-beta.vercel.app/" target="_blank">
-              <div className="w-full">
+              <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl  "
                   src="/images/proj4.png"
                   alt=""
                 />
-              </div>
+              </motion.div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
               Beshify 🤸🏻
             </h1>
-            <p className="text-center text-gray-500">
+            <motion.p initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
               Trending meme that converted it into a website. Auto Generated Emoji.
-            </p>
+            </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">Tailwind</span>
@@ -186,22 +185,22 @@ export const Projects = () => {
         <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://rieevans.github.io/jobportal.github.io/" target="_blank">
-              <div className="w-full">
+              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj5.png"
                   alt=""
                 />
-              </div>
+              </motion.div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
               Job Hunt Portal 🤸🏻
             </h1>
-            <p className="text-center text-gray-500">
+            <motion.p initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
               Landing page for Job hunt. Built with HTML CSS and JS
-            </p>
+            </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600 ">HTML CSS</span>
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">JAVASCRIPT</span>

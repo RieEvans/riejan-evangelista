@@ -2,7 +2,11 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="bg-white py-20  ">
+    <section id="contact" className="bg-white py-20 relative overflow-hidden ">
+      <div className="absolute w-[150px] top-0 sm:right-0 xl:right-20">
+        <img className="w-full h-full object-cover" src="/images/3dimage.png" />
+      </div>
+      
       <div className="m-auto sm:w-[90%] md:w-[60%]">
         <h1 className="text-blue-400 font-bold uppercase">Contact </h1>
         <p className="text-slate-900 text-2xl font-bold tracking-widest">
