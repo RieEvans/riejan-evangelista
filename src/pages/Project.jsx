@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="xl:h-full py-20 bg-slate-50">
-      <div className="m-auto sm:w-[90%] md:w-[60%] snap-x">
+    <section id="projects" className="xl:h-full py-20 bg-slate-50 relative overflow-hidden">
+      
+      <div className="m-auto sm:w-[90%] md:w-[60%] ">
         <h1 className="text-md font-bold text-blue-500 uppercase">Projects</h1>
         <h2 className="text-2xl font-bold text-slate-900 mt-5">
           Each Project has a unique piece of development 🧩
@@ -142,10 +143,10 @@ export const Projects = () => {
         {/* 4th Project */}
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
-            <a className="" href="https://beshify-beta.vercel.app/" target="_blank">
+            <a className="" href="https://dictionary-ten-ashy.vercel.app/" target="_blank">
               <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
                 <img
-                  className="w-full h-full object-cover rounded-xl  "
+                  className="w-full h-full object-cover rounded-xl shadow-mmd border-l "
                   src="/images/proj4.png"
                   alt=""
                 />
@@ -154,10 +155,10 @@ export const Projects = () => {
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
             <h1 className="text-center font-bold text-[20px] ">
-              Beshify 🤸🏻
+              Dictionary 📖
             </h1>
             <motion.p initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
-              Trending meme that converted it into a website. Auto Generated Emoji.
+              Dictionary website using API
             </motion.p>
             <div className="flex gap-5 justify-center">
               <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">React</span>
@@ -166,13 +167,13 @@ export const Projects = () => {
             <div className="flex gap-5 items-center justify-center">
               <a
                 className="flex font-semibold items-center justify-between gap-2"
-                href="https://github.com/RieEvans/Beshify"
+                href="https://github.com/RieEvans/Dictionary"
                 target="_blank">
                 Code <i className="fa-brands fa-github text-2xl"></i>
               </a>
               <a
                 className="flex font-semibold items-center justify-between gap-2 "
-                href="https://beshify-beta.vercel.app/"
+                href="https://dictionary-ten-ashy.vercel.app/"
                 target="_blank">
                 Live Demo{" "}
                 <i className="fa-solid fa-share-from-square text-2xl"></i>
@@ -224,6 +225,8 @@ export const Projects = () => {
         </div>
 
       </div>
+
+    
     </section>
   );
 };
