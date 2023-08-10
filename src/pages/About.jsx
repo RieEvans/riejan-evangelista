@@ -59,7 +59,7 @@ export const About = () => {
             A dedicated Front-end Developer based in Rizal, Philippines 📍
           </h2>
           <motion.p initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.8 }} className=" opacity-60">
-            As a Junior Front-End Developer, I possess an impressive arsenal of
+            As a Front-End Developer, I possess an impressive arsenal of
             skills in HTML, CSS, JavaScript, React, Tailwind, DaisyUI and Figma for Web Design Prototype. I excel
             in designing and maintaining responsive websites that offer a smooth
             user experience. My expertise lies in crafting dynamic, engaging
