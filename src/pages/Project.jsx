@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import { ToggleContext } from "../Hooks/ThemeContext";
 
 export const Projects = () => {
+
+  const {isToggle} = useContext(ToggleContext)
+
   return (
-    <section id="projects" className="xl:h-full py-20 bg-slate-50 relative overflow-hidden">
+    <section id="projects" className={`${isToggle ? "bg-slate-900 text-white" : "bg-slate-50"} xl:h-full py-20 relative overflow-hidden`}>
       
       <div className="m-auto sm:w-[90%] md:w-[60%] ">
         <h1 className="text-md font-bold text-blue-500 uppercase">Projects</h1>
-        <h2 className="text-2xl font-bold text-slate-900 mt-5">
+        <h2 className="text-2xl font-bold  mt-5">
           Each Project has a unique piece of development 🧩
         </h2>
+        
         {/* First Project */}
         <motion.div initial={{scaleY:0}} whileInView={{scaleY:1}} transition={{duration:1, type:'spring', delay:0.1}} viewport={{once:true}} className="bg-white rounded-xl shadow-md xl:flex items-start p-10  gap-5 mt-10">
           <div className="">
@@ -24,7 +29,7 @@ export const Projects = () => {
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5">
-            <h1 className="text-center font-bold text-[20px] ">
+            <h1 className="text-center text-slate-900 font-bold text-[20px] ">
               Booking Website 📖
             </h1>
             <motion.p initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
@@ -32,19 +37,19 @@ export const Projects = () => {
               for searching and viewing places around the world especially
               Philippines .
             </motion.p>
-            <div className="flex gap-5 justify-center">
+            <div className="flex gap-5 text-slate-900 justify-center">
               <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">React</span>
               <span className="shadow-mmd border-t border-l border-slate-600 px-5 py-2 rounded-md">Tailwind</span>
             </div>
             <div className="flex gap-5 items-center justify-center">
               <a
-                className="flex font-semibold items-center justify-between gap-2"
+                className="flex text-slate-900 font-semibold items-center justify-between gap-2"
                 href="https://github.com/RieEvans/Wayfarer"
                 target="_blank">
                 Code <i className="fa-brands fa-github text-2xl"></i>
               </a>
               <a
-                className="flex font-semibold items-center justify-between gap-2 "
+                className="flex text-slate-900 font-semibold items-center justify-between gap-2 "
                 href="https://wayfarer-beta.vercel.app/"
                 target="_blank">
                 Live Demo{" "}
@@ -55,7 +60,7 @@ export const Projects = () => {
         </motion.div>
 
         {/* 2nd Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse  items-start p-10   gap-5 mt-10">
+        <div className="bg-white text-slate-900 rounded-xl shadow-md xl:flex xl:flex-row-reverse  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://cartimar.vercel.app/" target="_blank">
               <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
@@ -68,7 +73,7 @@ export const Projects = () => {
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
-            <h1 className="text-center font-bold text-[20px] ">
+            <h1 className="text-center  font-bold text-[20px] ">
               Add to Cart Website 🛒
             </h1>
             <motion.p initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
@@ -98,7 +103,7 @@ export const Projects = () => {
 
         
         {/* 3rd Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex  items-start p-10   gap-5 mt-10">
+        <div className="bg-white text-slate-900 rounded-xl shadow-md xl:flex  items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://todo-app-five-opal.vercel.app/" target="_blank">
               <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
@@ -141,7 +146,7 @@ export const Projects = () => {
         </div>
         
         {/* 4th Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl text-slate-900 shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://dictionary-ten-ashy.vercel.app/" target="_blank">
               <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
@@ -183,7 +188,7 @@ export const Projects = () => {
         </div>
 
         {/* 5th Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
+        <div className="bg-white rounded-xl text-slate-900 shadow-md xl:flex items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://rieevans.github.io/jobportal.github.io/" target="_blank">
               <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
@@ -225,7 +230,7 @@ export const Projects = () => {
         </div>
 
         {/* 6th Project */}
-        <motion.div initial={{scaleY:0}} whileInView={{scaleY:1}} transition={{duration:1, type:'spring', delay:0.1}} viewport={{once:true}} className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
+        <motion.div initial={{scaleY:0}} whileInView={{scaleY:1}} transition={{duration:1, type:'spring', delay:0.1}} viewport={{once:true}} className="bg-white text-slate-900 rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://rieevans.github.io/getCoins/tokens.html" target="_blank">
               <div className="w-full">

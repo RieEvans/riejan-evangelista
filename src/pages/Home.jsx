@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import {ToggleContext } from "../Hooks/ThemeContext";
 
 export const Home = () => {
+
+  const { isToggle } = useContext(ToggleContext)
+
   const titleVariant = {
     offScreen: {
       opacity: 0,
@@ -37,22 +41,23 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden xl:h-screen sm:py-20 bg-slate-50 flex items-center justify-center">
+      className={`${isToggle ? 'bg-slate-900 text-white' : 'bg-slate-50'} relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
+      
       <div className="m-auto sm:w-[90%] md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
-        <motion.div>
+        <div>
           <motion.h1
             variants={titleVariant}
             initial="offScreen"
             whileInView={`onScreen`}
-            className="relative  xl:text-5xl sm:text-[30px] md:text-6xl  sm:text-center xl:text-start tracking-wide font-bold text-gray-800">
-            Front-End Developer{" "}
+            className={`relative xl:text-5xl sm:text-[30px] md:text-6xl sm:text-center xl:text-start tracking-wide font-bold`}>
+            Front End Developer{" "}
             <span className="absolute animate-wiggle">👋🏻</span>
           </motion.h1>
           <motion.p
             variants={textVariant}
             initial="offScreen"
             whileInView={`onScreen`}
-            className="sm:text-center xl:text-start text-gray-800 tracking-wide text-[16px] sm:mt-0 md:mt-10 leading-6">
+            className="sm:text-center xl:text-start text-gray-500 tracking-wide text-[16px] sm:mt-0 md:mt-10 leading-6">
             Hi, I'm Riejan Evangelista, Aspiring to be a Front End Developer
             📍
           </motion.p>
@@ -68,7 +73,7 @@ export const Home = () => {
             </a>
           </div>
           <div className="relative flex sm:flex-col xl:flex-row items-center justify-around xl:mt-0 sm:mt-10 z-40 ">
-            <p className="border-r border-slate-900 pr-5 text-slate-900 font-semibold">
+            <p className="border-r border-slate-900 pr-5  font-semibold">
               Tech Stack
             </p>
             <div className=" tech-icons  transition flex flex-wrap justify-center gap-5 xl:mt-0 sm:mt-5">
@@ -129,7 +134,7 @@ export const Home = () => {
               </motion.div>
             </div>
           </div>
-        </motion.div>
+        </div>
         <div className="flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0, x: 50 }}

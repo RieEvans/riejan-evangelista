@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import { ToggleContext } from "../Hooks/ThemeContext";
 
 export const About = () => {
+
+  // Context Hooks
+  const {isToggle} = useContext(ToggleContext)
+
   const imageVariant = {
     offScreen: {
       y: 300,
@@ -37,7 +42,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="bg-white py-20 flex items-center justify-center overflow-hidden ">
+      className={`${isToggle ? "bg-slate-800" : ""} py-20 flex items-center justify-center overflow-hidden`}>
       <motion.div
         initial="offScreen"
         whileInView="onScreen"
@@ -60,7 +65,7 @@ export const About = () => {
         </motion.div>
         <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
           <h1 className="text-blue-400 font-bold">ABOUT ME 😉</h1>
-          <h2 className="text-2xl text-slate-900 font-bold sm:text-center md:text-start">
+          <h2 className={`${isToggle ? "text-white" : "text-slate-900"} text-2xl font-bold sm:text-center md:text-start`}>
             Aspiring Web Developer
           </h2>
           <motion.p
