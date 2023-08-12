@@ -5,28 +5,35 @@ import { Projects } from "./pages/Project";
 import { Contact } from "./pages/Contact";
 import { Header } from "./Header/Header";
 import { Footer } from "./pages/Footer";
-
+import { LoadingState } from "./components/LoadingState";
 import { ToggleContext } from "./Hooks/ThemeContext";
 
-
 export default function App() {
+  const [loading, setLoading] = useState(true);
   const [isToggle, setToggle] = useState(() => {
     const savedToggle = localStorage.getItem("darkmodes");
-    return savedToggle !== null ? JSON.parse(savedToggle) : null
+    return savedToggle !== null ? JSON.parse(savedToggle) : null;
   });
 
- // Define a function to handle toggling and update localStorage
- const handleToggle = () => {
-  const newToggle = !isToggle;
-  setToggle(newToggle)
-  localStorage.setItem('darkmodes', JSON.stringify(newToggle))
- }
+  // Define a function to handle toggling and update localStorage
+  const handleToggle = () => {
+    const newToggle = !isToggle;
+    setToggle(newToggle);
+    localStorage.setItem("darkmodes", JSON.stringify(newToggle));
+  };
 
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
+  
+  if (loading) {
+    return <LoadingState />;
+  }
 
   return (
     <>
       <main>
-        <ToggleContext.Provider value={{ isToggle, setToggle:handleToggle }}>
+        <ToggleContext.Provider value={{ isToggle, setToggle: handleToggle }}>
           <Header />
           <Home />
           <About />
