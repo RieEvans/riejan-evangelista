@@ -33,7 +33,7 @@ export const Header = () => {
         </h1>
       </motion.div>{" "}
       {/* Scroll Line Progress */}
-      <header className="z-50 flex xl:flex justify-center fixed bottom-0 xl:top-40 xl:right-6  h-[8.5vh] w-full  xl:h-[50vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border border-slate-900 p-5">
+      <header className="z-50 flex xl:flex justify-center fixed bottom-0 xl:top-40 xl:right-6 h-[8.5vh] w-full xl:h-[50vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border-t xl:border border-blue-300 p-5">
         <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 items-center justify-center">
           <a href="#home">
             <i className="fa-solid fa-house-user xl:text-2xl text-3xl"></i>
@@ -45,7 +45,7 @@ export const Header = () => {
             <i className="fa-solid fa-list-check xl:text-2xl text-3xl"></i>
           </a>
           <a href="#contact">
-            <i className="fa-solid fa-house-user xl:text-2xl text-3xl"></i>
+            <i className="fa-regular fa-address-book xl:text-2xl text-3xl"></i>
           </a>
         </nav>
       </header>
