@@ -24,7 +24,7 @@ export const Header = () => {
     restDelta: 0.001,
   });
   return (
-    <div className="">
+    <section className="z-50 relative ">
       <motion.div
         style={{ scaleX }}
         className="fixed left-0 right-0 bottom-0 h-[4px] z-50 bg-indigo-600">
@@ -33,54 +33,22 @@ export const Header = () => {
         </h1>
       </motion.div>{" "}
       {/* Scroll Line Progress */}
-      <header className="fixed top-0 bg-white shadow-md w-full z-50">
-        <div className="flex items-center justify-between sm:px-5 md:px-20 py-5 ">
-        <a
-            href="#home"
-            className="font-bold text-slate-900 text-2xl relative">
-            riejan.dev{" "}
-            <p className="animate-spin-slow absolute top-0 right-[-35px]">⚙️</p>
-          </a>
-          <nav className="md:flex items-center justify-between sm:hidden  gap-5 text-slate-900 font-semibold">
-            <a href="#home">
-              <i className="fa-solid fa-house-user"></i> Home
-            </a>
-            <a href="#about">
-              <i className="fa-regular fa-address-card"></i> About
-            </a>
-            <a href="#projects">
-              <i className="fa-solid fa-list-check"></i> Projects
-            </a>
-            <a href="#contact">
-              <i className="fa-solid fa-house-user"></i> Contact
-            </a>
-          </nav>
-
-          <div
-            onClick={() => setToggle(!toggle)}
-            className={`sm:block md:hidden text-2xl cursor-pointer`}>
-            <i className="fa-solid fa-bars"></i>
-          </div>
-        </div>
-        <nav
-          ref={menuRef}
-          className={`${
-            toggle ? "translate-x-0" : "translate-x-[1000px]"
-          }  md:hidden  absolute rounded-bl-[3rem] rounded-tl-[3rem] right-0 transition border-r-4 border-slate-900 bg-slate-900 text-white  flex-col flex p-16 gap-5 font-bold focus:bg-slate-900 focus:text-white`}>
+      <header className="z-50 flex xl:flex justify-center fixed bottom-0 xl:top-40 xl:right-6  h-[8.5vh] w-full  xl:h-[50vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border border-slate-900 p-5">
+        <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 items-center justify-center">
           <a href="#home">
-            <i className="fa-solid fa-house-user"></i> Home
+            <i className="fa-solid fa-house-user xl:text-2xl text-3xl"></i>
           </a>
           <a href="#about">
-            <i className="fa-regular fa-address-card"></i> About
+            <i className="fa-regular fa-address-card xl:text-2xl text-3xl"></i>
           </a>
           <a href="#projects">
-            <i className="fa-solid fa-list-check"></i> Projects
+            <i className="fa-solid fa-list-check xl:text-2xl text-3xl"></i>
           </a>
           <a href="#contact">
-            <i className="fa-solid fa-house-user"></i> Contact
+            <i className="fa-solid fa-house-user xl:text-2xl text-3xl"></i>
           </a>
         </nav>
       </header>
-    </div>
+    </section>
   );
 };

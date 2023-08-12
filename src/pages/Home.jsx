@@ -38,7 +38,7 @@ export const Home = () => {
     <section
       id="home"
       className="relative overflow-hidden xl:h-screen sm:py-20 bg-slate-50 flex items-center justify-center">
-      <div className="m-auto sm:w-[90%] md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5">
+      <div className="m-auto sm:w-[90%] md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
         <motion.div>
           <motion.h1
             variants={titleVariant}
@@ -54,7 +54,7 @@ export const Home = () => {
             whileInView={`onScreen`}
             className="sm:text-center xl:text-start text-gray-800 tracking-wide text-[16px] sm:mt-0 md:mt-10 leading-6">
             Hi, I'm Riejan Evangelista, Aspiring to be a Front End Developer
-            based in Rizal, Philippines 📍
+            📍
           </motion.p>
           <div className="mt-6 flex items-center sm:justify-center xl:justify-start ">
             <a

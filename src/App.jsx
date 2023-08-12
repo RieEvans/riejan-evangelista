@@ -8,7 +8,7 @@ import { Footer } from "./pages/Footer";
 export default function App() {
   
   return (
-    <main className={`mt-[3.5rem]`}>
+    <main className={``}>
       <Header  />
       <Home />
       <About />
