@@ -41,9 +41,9 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className={`${isToggle ? 'bg-slate-900 text-white' : 'bg-slate-50'} relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
+      className={`${isToggle ? 'bg-slate-900 text-white' : 'bg-slate-50'}  relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
       
-      <div className="m-auto sm:w-[90%] md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
+      <div className=" m-auto sm:w-[90%]  md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
         <div>
           <motion.h1
             variants={titleVariant}
@@ -142,7 +142,7 @@ export const Home = () => {
             transition={{ duration: 0.6 }}
             className="rounded-full sm:w-[300px] xl:w-[300px]  relative">
             <img
-              className="animate-blob w-full border border-slate-100 z-50 h-full object-cover"
+              className="animate-blob  w-full border border-slate-100 z-50 h-full object-cover"
               src="/profile.jpg"
               alt=""
             />
@@ -150,7 +150,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <motion.div initial={{ scale:0.1}} whileInView={{scale:1}} transition={{duration:2, type: "spring", bounce: 0.1, }} viewport={{once:true}} className="w-[600px] h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
+      <motion.div initial={{ scale:0.1}} whileInView={{scale:1}} transition={{duration:2, type: "spring", bounce: 0.1, }} viewport={{once:true}} className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
       <motion.div initial={{scale:0.1}} whileInView={{scale:1}} transition={{duration:2, type: "spring", bounce: 0.1, }} viewport={{once:true}} className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
     </section>
   );
