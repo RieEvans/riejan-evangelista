@@ -11,16 +11,16 @@ export const Projects = () => {
           Each Project has a unique piece of development 🧩
         </h2>
         {/* First Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10  gap-5 mt-10">
+        <motion.div initial={{scaleY:0}} whileInView={{scaleY:1}} transition={{duration:1, type:'spring', delay:0.1}} viewport={{once:true}} className="bg-white rounded-xl shadow-md xl:flex items-start p-10  gap-5 mt-10">
           <div className="">
             <a className="" href="https://wayfarer-beta.vercel.app/" target="_blank">
-              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
+              <div  className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj1.png"
                   alt=""
                 />
-              </motion.div>
+              </div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5">
@@ -52,7 +52,7 @@ export const Projects = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 2nd Project */}
         <div className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse  items-start p-10   gap-5 mt-10">
@@ -225,16 +225,16 @@ export const Projects = () => {
         </div>
 
         {/* 6th Project */}
-        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
+        <motion.div initial={{scaleY:0}} whileInView={{scaleY:1}} transition={{duration:1, type:'spring', delay:0.1}} viewport={{once:true}} className="bg-white rounded-xl shadow-md xl:flex xl:flex-row-reverse items-start p-10   gap-5 mt-10">
           <div className="">
             <a className="" href="https://rieevans.github.io/getCoins/tokens.html" target="_blank">
-              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
+              <div className="w-full">
                 <img
                   className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
                   src="/images/proj6.png"
                   alt=""
                 />
-              </motion.div>
+              </div>
             </a>
           </div>
           <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
@@ -264,7 +264,7 @@ export const Projects = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
       </div>
 
