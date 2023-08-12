@@ -2,9 +2,9 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <section className="bg-slate-900 py-10">
+    <section className="bg-slate-900 pt-5 pb-10">
       <div className="m-auto sm:w-[90%] md:w-[60%] flex items-center justify-between">
-        <div>
+        <div className="">
           <h1 className="text-white ">
             <span className="text-zinc-100 font-semibold tracking-widest">
               Portfolio:
