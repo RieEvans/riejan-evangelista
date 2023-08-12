@@ -224,6 +224,48 @@ export const Projects = () => {
           </div>
         </div>
 
+        {/* 6th Project */}
+        <div className="bg-white rounded-xl shadow-md xl:flex items-start p-10   gap-5 mt-10">
+          <div className="">
+            <a className="" href="https://rieevans.github.io/getCoins/tokens.html" target="_blank">
+              <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="w-full">
+                <img
+                  className="w-full h-full object-cover rounded-xl shadow-mmd border-t border-l border-slate-600"
+                  src="/images/proj6.png"
+                  alt=""
+                />
+              </motion.div>
+            </a>
+          </div>
+          <div className="w-full xl:mt-0 sm:mt-5 flex flex-col gap-5   ">
+            <h1 className="text-center font-bold text-[20px] ">
+              getCoins 🪙
+            </h1>
+            <motion.p initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, type:'tween', delay:0.2}} viewport={{once:true}} className="text-center text-gray-500">
+              My First Project NFT Website Landing Page using HTML CSS & Javascript.
+            </motion.p>
+            <div className="flex gap-5 justify-center">
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600 ">HTML CSS</span>
+              <span className="shadow-mmd px-5 py-2 rounded-md border-t border-l border-slate-600">JAVASCRIPT</span>
+            </div>
+            <div className="flex gap-5 items-center justify-center">
+              <a
+                className="flex font-semibold items-center justify-between gap-2"
+                href="https://github.com/RieEvans/getCoins"
+                target="_blank">
+                Code <i className="fa-brands fa-github text-2xl"></i>
+              </a>
+              <a
+                className="flex font-semibold items-center justify-between gap-2 "
+                href="https://rieevans.github.io/getCoins/tokens.html"
+                target="_blank">
+                Live Demo{" "}
+                <i className="fa-solid fa-share-from-square text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     
