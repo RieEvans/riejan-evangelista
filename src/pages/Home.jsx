@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import {ToggleContext } from "../Hooks/ThemeContext";
+import { ToggleContext } from "../Hooks/ThemeContext";
 
 export const Home = () => {
-
-  const { isToggle } = useContext(ToggleContext)
+  const { isToggle } = useContext(ToggleContext);
 
   const titleVariant = {
     offScreen: {
@@ -41,8 +40,9 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className={`${isToggle ? 'bg-slate-900 text-white' : 'bg-slate-50'}  relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
-      
+      className={`${
+        isToggle ? "bg-slate-900 text-white" : "bg-slate-50"
+      }  relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
       <div className=" m-auto sm:w-[90%]  md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
         <div>
           <motion.h1
@@ -58,8 +58,7 @@ export const Home = () => {
             initial="offScreen"
             whileInView={`onScreen`}
             className="sm:text-center xl:text-start text-gray-500 tracking-wide text-[16px] sm:mt-0 md:mt-10 leading-6">
-            Hi, I'm Riejan Evangelista, Aspiring to be a Front End Developer
-            📍
+            Hi, I'm Riejan Evangelista, Aspiring to be a Front End Developer 📍
           </motion.p>
           <div className="mt-6 flex items-center sm:justify-center xl:justify-start ">
             <a
@@ -135,7 +134,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center z-50">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -150,8 +149,39 @@ export const Home = () => {
         </div>
       </div>
 
-      <motion.div initial={{ scale:0.1}} whileInView={{scale:1}} transition={{duration:2, type: "spring", bounce: 0.1, }} viewport={{once:true}} className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
-      <motion.div initial={{scale:0.1}} whileInView={{scale:1}} transition={{duration:2, type: "spring", bounce: 0.1, }} viewport={{once:true}} className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
+      {/* Animation Background Section */}
+      <div
+        className={`${
+          isToggle ? "translate-y-[0]" : "translate-y-[-1000px]"
+        } transition ease absolute top-[20px] right-[10px]`}>
+        <div className="w-[100px] md:w-[300px]">
+          <img src="/moon.svg" alt="Moon" /> {/* Moon */}
+          <div className="w-[30px] md:w-[60px] absolute top-[30px] left-[17px] md:top-[100px] md:left-[100px]">
+            <img src="/stars.svg" alt="Stars" /> {/* Stars */}
+          </div>
+        </div>
+      </div>
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.3 }}
+        className="absolute top-[-190px] left-[-190px] ">
+        <div className="w-[400px] md:w-[500px]">
+          <img className="w-full h-full object-cover" src="/splatter.svg" />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
+        viewport={{ once: true }}
+        className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
+      <motion.div
+        initial={{ scale: 0.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
+        viewport={{ once: true }}
+        className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
     </section>
   );
 };
