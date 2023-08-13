@@ -10,7 +10,7 @@ export const Projects = () => {
       id="projects"
       className={`${
         isToggle ? "bg-slate-900 text-white" : "bg-slate-50"
-      } xl:h-full py-20 relative overflow-hidden`}>
+      } transition duration-700 ease xl:h-full py-20 relative overflow-hidden`}>
       <div className="m-auto sm:w-[90%] md:w-[60%] ">
         <h1 className="text-md font-bold text-blue-500 uppercase">Projects</h1>
         <h2 className="text-2xl font-bold  mt-5">

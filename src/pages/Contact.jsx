@@ -5,7 +5,7 @@ export const Contact = () => {
 
   const {isToggle} = useContext(ToggleContext)
   return (
-    <section id="contact" className={`${isToggle ? "bg-slate-800 text-white" : ""} relative py-10 `}>
+    <section id="contact" className={`${isToggle ? "bg-slate-800 text-white" : ""} transition duration-700 ease relative py-10 `}>
       <div className="absolute w-[150px] top-0 sm:right-0 xl:right-20">
         <img className="w-full h-full object-cover" src="/images/3dimage.png" />
       </div>

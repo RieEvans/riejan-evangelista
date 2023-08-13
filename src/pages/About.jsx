@@ -42,7 +42,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className={`${isToggle ? "bg-slate-800" : ""} py-20 flex items-center justify-center overflow-hidden`}>
+      className={`${isToggle ? "bg-slate-800" : ""} transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
       <motion.div
         initial="offScreen"
         whileInView="onScreen"

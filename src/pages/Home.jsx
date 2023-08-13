@@ -42,7 +42,7 @@ export const Home = () => {
       id="home"
       className={`${
         isToggle ? "bg-slate-900 text-white" : "bg-slate-50"
-      }  relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
+      } transition duration-700 ease relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
       <div className=" m-auto sm:w-[90%]  md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
         <div>
           <motion.h1
