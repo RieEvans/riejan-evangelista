@@ -157,8 +157,8 @@ export const Home = () => {
       {/* Animation Background Section */}
       <div
         className={`${
-          isToggle ? "translate-y-[0]" : "translate-y-[-1000px]"
-        } transition duration-700 ease-in absolute top-[20px] right-[10px]`}>
+          isToggle ? "scale-100" : "scale-0"
+        } transition duration-1000 ease-in absolute top-[20px] right-[10px]`}>
         <div className="w-[100px] md:w-[300px]">
           <img src="/moon.svg" alt="Moon" /> {/* Moon */}
           <div className="w-[30px] md:w-[60px] absolute top-[30px] left-[17px] md:top-[100px] md:left-[100px]">
