@@ -25,20 +25,24 @@ export const Header = () => {
         </h1>
       </motion.div>{" "}
       {/* Scroll Line Progress */}
-      <header className=" z-50 flex xl:flex justify-center fixed bottom-0 xl:top-40 xl:right-6 h-[5vh] w-full xl:h-[50vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border-t xl:border border-blue-300 p-5">
-        <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 items-center justify-center">
-          <a href="#home" >
+      <header className=" z-50 flex xl:flex justify-center fixed bottom-0 xl:top-20 xl:right-6 h-[7vh] w-full xl:h-[70vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border-t xl:border border-blue-300 p-5">
+        <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 py-2 items-center justify-center">
+          <a href="#home" className="flex flex-col items-center" >
             <i className="fa-solid fa-house-user xl:text-2xl text-xl"></i>
+            <span className="text-[10px]">Home</span>
           </a>
       
-          <a href="#about">
+          <a href="#about" className="flex flex-col items-center">
             <i className="fa-regular fa-address-card xl:text-2xl text-xl"></i>
+            <span className="text-[10px]">About</span>
           </a>
-          <a href="#projects">
+          <a href="#projects" className="flex flex-col items-center">
             <i className="fa-solid fa-list-check xl:text-2xl text-xl"></i>
+            <span className="text-[10px]">Projects</span>
           </a>
-          <a href="#contact">
+          <a href="#contact" className="flex flex-col items-center">
             <i className="fa-regular fa-address-book xl:text-2xl text-xl"></i>
+            <span className="text-[10px]">Contact</span>
           </a>
           <div
             onClick={() => setToggle(!isToggle)}
