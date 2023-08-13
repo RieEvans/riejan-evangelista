@@ -175,18 +175,7 @@ export const Home = () => {
           <img className="w-full h-full object-cover" src="/splatter.svg" />
         </div>
       </motion.div>
-      <motion.div
-        initial={{ scale: 0.1 }}
-        whileInView={{ scale: 1 }}
-        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
-        viewport={{ once: true }}
-        className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
-      <motion.div
-        initial={{ scale: 0.1 }}
-        whileInView={{ scale: 1 }}
-        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
-        viewport={{ once: true }}
-        className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
+      
     </section>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { ToggleContext } from "../Hooks/ThemeContext";
+import { WaveNight } from "../components/WaveNight";
+import { WaveLight } from "../components/WaveLight";
 
 export const About = () => {
 
@@ -42,7 +44,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className={`${isToggle ? "bg-slate-800" : ""} transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
+      className={`${isToggle ? "bg-slate-800" : ""} relative overflow-hidden transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
       <motion.div
         initial="offScreen"
         whileInView="onScreen"
@@ -63,7 +65,7 @@ export const About = () => {
             <div className="rounded-full bg-indigo-400 absolute w-[60px] h-[60px] bottom-0 left-0 z-0"></div>
           </div>
         </motion.div>
-        <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
+        <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 z-50 ">
           <h1 className="text-blue-400 font-bold">ABOUT ME 😉</h1>
           <h2 className={`${isToggle ? "text-white" : "text-slate-900"} text-2xl font-bold sm:text-center md:text-start`}>
             Aspiring Web Developer
@@ -83,6 +85,23 @@ export const About = () => {
           </motion.p>
         </motion.div>
       </motion.div>
+
+      <div className="absolute top-0 xl:top-[-50px] w-full">
+        {isToggle ?  <WaveNight /> : <WaveLight />}
+      </div>
+
+      <motion.div
+        initial={{ scale: 0.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
+        viewport={{ once: true }}
+        className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
+      <motion.div
+        initial={{ scale: 0.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 2, type: "spring", bounce: 0.1 }}
+        viewport={{ once: true }}
+        className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
     </section>
   );
 };
