@@ -80,6 +80,7 @@ export const Home = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, type: "spring", bounce: 0.4 }}
+                viewport={{once:true}}
                 className="  w-[60px] bg-white shadow-xl rounded-full  p-2    ">
                 <img
                   className="w-full h-full object-cover rounded-full"
@@ -91,6 +92,7 @@ export const Home = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.1, type: "spring", bounce: 0.4 }}
+                viewport={{once:true}}
                 className=" w-[60px] bg-white shadow-xl rounded-full  p-2   ">
                 <img
                   className="w-full h-full object-cover"
@@ -102,6 +104,7 @@ export const Home = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.6, type: "spring", bounce: 0.4 }}
+                viewport={{once:true}}
                 className=" w-[60px]      bg-white shadow-xl rounded-full  p-2   ">
                 <img
                   className="w-full h-full object-cover rounded-full"
@@ -113,6 +116,7 @@ export const Home = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2.1, type: "spring", bounce: 0.4 }}
+                viewport={{once:true}}
                 className=" w-[60px]    bg-white shadow-xl rounded-full  p-2  ">
                 <img
                   className="w-full h-full object-cover"
@@ -124,6 +128,7 @@ export const Home = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2.7, type: "spring", bounce: 0.4 }}
+                viewport={{once:true}}
                 className="  w-[60px] bg-white shadow-xl rounded-full  p-2   ">
                 <img
                   className="w-full h-full object-cover"
@@ -153,7 +158,7 @@ export const Home = () => {
       <div
         className={`${
           isToggle ? "translate-y-[0]" : "translate-y-[-1000px]"
-        } transition ease absolute top-[20px] right-[10px]`}>
+        } transition duration-700 ease-in absolute top-[20px] right-[10px]`}>
         <div className="w-[100px] md:w-[300px]">
           <img src="/moon.svg" alt="Moon" /> {/* Moon */}
           <div className="w-[30px] md:w-[60px] absolute top-[30px] left-[17px] md:top-[100px] md:left-[100px]">
