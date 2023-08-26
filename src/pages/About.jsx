@@ -102,6 +102,7 @@ export const About = () => {
         transition={{ duration: 2, type: "spring", bounce: 0.1 }}
         viewport={{ once: true }}
         className="w-[600px] h-[600px] rounded-full bg-green-300 absolute bottom-[-320px] right-[-320px]"></motion.div>
+
     </section>
   );
 };

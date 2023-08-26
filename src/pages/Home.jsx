@@ -141,13 +141,13 @@ export const Home = () => {
         </div>
         <div className="flex items-center justify-center z-50">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ scale:0.7 }}
+            whileInView={{ scale:1}}
+            transition={{ duration: 0.4 }}
             className="rounded-full sm:w-[300px] xl:w-[300px]  relative">
             <img
               className="animate-blob  w-full border border-slate-100 z-50 h-full object-cover"
-              src="/profile.jpg"
+              src="/images/formal.jpg"
               alt=""
             />
           </motion.div>
