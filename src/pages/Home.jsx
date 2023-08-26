@@ -14,9 +14,7 @@ export const Home = () => {
       opacity: 1,
       x: 0,
       transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 0.8,
+        duration: 1,
       },
     },
   };
@@ -30,9 +28,7 @@ export const Home = () => {
       opacity: 1,
       x: 0,
       transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 1,
+        duration: 1.2,
       },
     },
   };
@@ -42,24 +38,25 @@ export const Home = () => {
       id="home"
       className={`${
         isToggle ? "bg-slate-900 text-white" : "bg-slate-50"
-      } transition duration-700 ease relative overflow-hidden xl:h-screen sm:py-20 flex items-center justify-center`}>
-      <div className=" m-auto sm:w-[90%]  md:w-[60%] flex sm:flex-col-reverse xl:flex-row gap-5 xl:space-x-20">
-        <div>
+      } transition duration-700 ease relative  h-screen sm:py-20 flex items-center justify-center`}>
+      <div className=" m-auto sm:w-[90%]  md:w-[80%] flex md:flex-col xl:flex-row items-center justify-around">
+        <div className="z-50  ">
           <motion.h1
             variants={titleVariant}
             initial="offScreen"
             whileInView={`onScreen`}
-            className={`relative xl:text-5xl sm:text-[30px] md:text-6xl sm:text-center xl:text-start tracking-wide font-bold`}>
-            Front End Developer{" "}
+            className={`relative sm:text-[30px] md:text-5xl  text-start font-bold `}>
+            Riejan Evangelista{" "}
             <span className="absolute animate-wiggle">👋🏻</span>
           </motion.h1>
-          <motion.p
+          <motion.h2
             variants={textVariant}
             initial="offScreen"
             whileInView={`onScreen`}
-            className="sm:text-center xl:text-start text-gray-500 tracking-wide text-[16px] sm:mt-0 md:mt-10 leading-6">
-            Hi, I'm Riejan Evangelista, Aspiring to be a Front End Developer 📍
-          </motion.p>
+            className="text-xl font-bold tracking-relaxed sm:mt-0 md:my-5 leading-6 ">
+            Front end Developer 📍
+          </motion.h2>
+          <p></p>
           <div className="mt-6 flex items-center sm:justify-center xl:justify-start ">
             <a
               className=""
@@ -71,10 +68,8 @@ export const Home = () => {
               <i className="fa-brands fa-square-github text-3xl ml-5"></i>
             </a>
           </div>
-          <div className="relative flex sm:flex-col xl:flex-row items-center justify-around xl:mt-0 sm:mt-10 z-40 ">
-            <p className="border-r border-slate-900 pr-5  font-semibold">
-              Tech Stack
-            </p>
+          <div className="relative flex sm:flex-col xl:flex-row items-center  xl:mt-5 sm:mt-10 z-40 ">
+           
             <div className=" tech-icons  transition flex flex-wrap justify-center gap-5 xl:mt-0 sm:mt-5">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -138,20 +133,17 @@ export const Home = () => {
               </motion.div>
             </div>
           </div>
+          
         </div>
-        <div className="flex items-center justify-center z-50">
-          <motion.div
-            initial={{ scale:0.7 }}
-            whileInView={{ scale:1}}
-            transition={{ duration: 0.4 }}
-            className="rounded-full sm:w-[300px] xl:w-[300px]  relative">
+        <section className="md:block  hidden md:my-6 xl:mt-0 z-40">
+          <motion.div initial={{opacity:0.5, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration:1.5}} className="">
             <img
-              className="animate-blob  w-full border border-slate-100 z-50 h-full object-cover"
-              src="/images/formal.jpg"
+              className=" clip-First border-8 border-green-400 p-2 z-50 xl:w-[400px] xl:h-[500px] md:w-[300px] md:h-[380px] object-cover"
+              src="/images/leftImg.jpg"
               alt=""
             />
           </motion.div>
-        </div>
+        </section>
       </div>
 
       {/* Animation Background Section */}
@@ -159,9 +151,9 @@ export const Home = () => {
         className={`${
           isToggle ? "scale-100" : "scale-0"
         } transition duration-1000 ease-in absolute top-[20px] right-[10px]`}>
-        <div className="w-[100px] md:w-[300px]">
+        <div className="w-[100px] md:w-[200px]">
           <img src="/moon.svg" alt="Moon" /> {/* Moon */}
-          <div className="w-[30px] md:w-[60px] absolute top-[30px] left-[17px] md:top-[100px] md:left-[100px]">
+          <div className="w-[30px] md:w-[60px] absolute top-[30px] left-[17px] md:top-[60px] md:left-[60px]">
             <img src="/stars.svg" alt="Stars" /> {/* Stars */}
           </div>
         </div>
@@ -175,7 +167,6 @@ export const Home = () => {
           <img className="w-full h-full object-cover" src="/splatter.svg" />
         </div>
       </motion.div>
-      
     </section>
   );
 };

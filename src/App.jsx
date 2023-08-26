@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Projects } from "./pages/Project";
+import { Skills } from "./pages/Skills";
 import { Contact } from "./pages/Contact";
 import { Header } from "./Header/Header";
 import { Footer } from "./pages/Footer";
@@ -38,6 +39,7 @@ export default function App() {
           <Home />
           <About />
           <Projects />
+          <Skills />
           <Contact />
         </ToggleContext.Provider>
 

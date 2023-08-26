@@ -5,7 +5,7 @@ export const Contact = () => {
 
   const {isToggle} = useContext(ToggleContext)
   return (
-    <section id="contact" className={`${isToggle ? "bg-slate-800 text-white" : ""} transition duration-700 ease relative py-10 `}>
+    <section id="contact" className={`${isToggle ? "bg-slate-900 text-white" : "bg-slate-50"} transition duration-700 ease relative py-10 `}>
       <div className="absolute w-[150px] top-0 sm:right-0 xl:right-20">
         <img className="w-full h-full object-cover" src="/images/3dimage.png" />
       </div>
@@ -19,7 +19,7 @@ export const Contact = () => {
         <div className="mt-5">
           <div className=" md:flex items-center justify-between gap-5">
             {/* Location */}
-            <div className="p-5 bg-white text-slate-900 rounded-full shadow-mmd border-t border-l border-slate-900 flex items-center gap-1">
+            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex items-center gap-1">
               <div className="w-[40px]">
                 <img
                   className="w-full h-full object-cover"
@@ -33,7 +33,7 @@ export const Contact = () => {
               </div>
             </div>
             {/* Email */}
-            <div className="p-5 bg-white text-slate-900 rounded-full shadow-mmd border-t border-l border-slate-900 flex items-center gap-1 sm:mt-5 md:mt-0 ">
+            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex items-center gap-1 sm:mt-5 md:mt-0 ">
               <div className="w-[40px]">
                 <img
                   className="w-full h-full object-cover"
