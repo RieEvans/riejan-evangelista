@@ -6,7 +6,7 @@ export const Contact = () => {
   const {isToggle} = useContext(ToggleContext)
   return (
     <section id="contact" className={`${isToggle ? "bg-slate-900 text-white" : "bg-slate-50"} transition duration-700 ease relative py-10 `}>
-      <div className="absolute w-[150px] top-0 sm:right-0 xl:right-20">
+      <div className="absolute w-[100px] xl:w-[150px] top-0 sm:right-0 xl:right-20">
         <img className="w-full h-full object-cover" src="/images/3dimage.png" />
       </div>
       
@@ -17,10 +17,10 @@ export const Contact = () => {
         </p>
 
         <div className="mt-5">
-          <div className=" md:flex items-center justify-between gap-5">
+          <div className="xl:flex items-center justify-around space-y-2">
             {/* Location */}
-            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex items-center gap-1">
-              <div className="w-[40px]">
+            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex  items-center gap-1">
+              <div className="w-[50px]">
                 <img
                   className="w-full h-full object-cover"
                   src="/images/location.png"
@@ -29,12 +29,12 @@ export const Contact = () => {
               </div>
               <div>
                 <p className="font-bold">Location</p>
-                <p>Rodriguez Rizal, Philippines</p>
+                <p className="text-sm">Rodriguez Rizal, Philippines</p>
               </div>
             </div>
             {/* Email */}
-            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex items-center gap-1 sm:mt-5 md:mt-0 ">
-              <div className="w-[40px]">
+            <div className="p-5 bg-white text-slate-900 rounded-xl shadow-mmd border-t border-l border-slate-900 flex items-center gap-1  md:mt-0 ">
+              <div className="w-[50px]">
                 <img
                   className="w-full h-full object-cover"
                   src="/images/email.png"
@@ -43,7 +43,7 @@ export const Contact = () => {
               </div>
               <div>
                 <p className="font-bold">Email</p>
-                <p className=" text-blue-600 whitespace-normal">riejanevangelista1620@gmail.com </p>
+                <p className=" text-blue-600 text-sm">riejanevangelista1620@gmail.com </p>
               </div>
             </div>
           </div>

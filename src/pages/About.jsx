@@ -68,7 +68,7 @@ export const About = () => {
         <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
           <h1 className="text-blue-400 font-bold">ABOUT ME 😉</h1>
           <h2 className={`${isToggle ? "text-white" : "text-slate-900"} text-2xl font-bold sm:text-center md:text-start`}>
-            Aspiring Web Developer
+            Software Developer
           </h2>
           <motion.p
             initial="offScreen"
