@@ -44,7 +44,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className={`${isToggle ? "bg-slate-800" : ""} relative overflow-hidden transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
+      className={`${isToggle ? "bg-slate-800" : ""} z-5 relative overflow-hidden transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
       <motion.div
         initial="offScreen"
         whileInView="onScreen"
@@ -65,7 +65,7 @@ export const About = () => {
             <div className="rounded-full bg-indigo-400 absolute w-[60px] h-[60px] bottom-0 left-0 z-0"></div>
           </div>
         </motion.div>
-        <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 z-50 ">
+        <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
           <h1 className="text-blue-400 font-bold">ABOUT ME 😉</h1>
           <h2 className={`${isToggle ? "text-white" : "text-slate-900"} text-2xl font-bold sm:text-center md:text-start`}>
             Aspiring Web Developer

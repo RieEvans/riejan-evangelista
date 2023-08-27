@@ -135,7 +135,7 @@ export const Home = () => {
           </div>
           
         </div>
-        <section className="md:block  hidden md:my-6 xl:mt-0 z-40">
+        <section className="xl:block hidden md:my-6 xl:mt-0 z-40">
           <motion.div initial={{opacity:0.5, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration:1.5}} className="">
             <img
               className=" clip-First border-8 border-green-400 p-2 z-50 xl:w-[400px] xl:h-[500px] md:w-[300px] md:h-[380px] object-cover"
