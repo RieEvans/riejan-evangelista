@@ -25,12 +25,12 @@ export const Header = () => {
         </h1>
       </motion.div>{" "}
       {/* Scroll Line Progress */}
-      <header className=" z-50 flex xl:flex justify-center fixed bottom-0 xl:top-20 xl:right-6 h-[7vh] w-full xl:h-[70vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 border-t xl:border border-blue-300 p-5">
-        <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 py-2 items-center justify-center">
+      <header className=" z-50 flex xl:flex justify-center fixed bottom-0 h-[8vh] w-full xl:top-40 xl:right-6 xl:h-[60vh] xl:w-[60px] bg-red-500 xl:rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-0 border-t xl:border border-blue-300 p-5">
+        <nav className="flex space-x-10 xl:space-x-0 xl:flex-col xl:space-y-10 py-1 items-center justify-center">
           <a href="#home" className="flex flex-col items-center" >
             <i className="fa-solid fa-house-user xl:text-2xl text-xl"></i>
             <span className="text-[10px]">Home</span>
-          </a>
+          </a>  
       
           <a href="#about" className="flex flex-col items-center">
             <i className="fa-regular fa-address-card xl:text-2xl text-xl"></i>

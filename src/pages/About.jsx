@@ -44,18 +44,18 @@ export const About = () => {
   return (
     <section
       id="about"
-      className={`${isToggle ? "bg-slate-800" : ""} z-5 relative overflow-hidden transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
+      className={`${isToggle ? "bg-slate-800" : ""} relative overflow-hidden transition duration-700 ease py-20 flex items-center justify-center overflow-hidden`}>
       <motion.div
         initial="offScreen"
         whileInView="onScreen"
         viewport={{ once: true }}
-        className="m-auto sm:w-[90%] z-50 md:w-[60%] grid xl:grid-cols-2 gap-10">
+        className="m-auto sm:w-[90%]  md:w-[60%] grid xl:grid-cols-2 gap-10">
         <motion.div
           variants={imageVariant}
           className="flex justify-center items-center">
-          <div className="relative z-50">
+          <div className="relative ">
             <img
-              className="w-full h-full rounded-xl h-full z-50 "
+              className="w-full h-full rounded-xl h-full  "
               src="/images/about.png"
               alt=""
             />
@@ -65,8 +65,8 @@ export const About = () => {
             <div className="rounded-full bg-indigo-400 absolute w-[60px] h-[60px] bottom-0 left-0 z-0"></div>
           </div>
         </motion.div>
-        <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
-          <h1 className="text-blue-400 pl-2 font-bold">ABOUT 😉</h1>
+        <motion.div variants={textVariant} className="flex z-30 flex-col space-y-5 space-x-2 ">
+          <h1 className="text-blue-400 pl-2 font-bold ">ABOUT 😉</h1>
           <motion.p
             initial="offScreen"
             whileInView="onScreen"
