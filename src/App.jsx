@@ -16,11 +16,11 @@ export default function App() {
     return savedToggle !== null ? JSON.parse(savedToggle) : null;
   });
 
-  // Define a function to handle toggling and update localStorage
-  const handleToggle = () => {
+  // function to handle toggling 
+  const handleToggle = _ => {
     const newToggle = !isToggle;
     setToggle(newToggle);
-    localStorage.setItem("darkmodes", JSON.stringify(newToggle));
+    localStorage.setItem("darkmodes", JSON.stringify(newToggle)); //update localStorage
   };
 
   setTimeout(() => {

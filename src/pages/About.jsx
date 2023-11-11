@@ -49,7 +49,7 @@ export const About = () => {
         initial="offScreen"
         whileInView="onScreen"
         viewport={{ once: true }}
-        className="m-auto sm:w-[90%] md:w-[60%] grid xl:grid-cols-2 gap-10">
+        className="m-auto sm:w-[90%] z-50 md:w-[60%] grid xl:grid-cols-2 gap-10">
         <motion.div
           variants={imageVariant}
           className="flex justify-center items-center">
@@ -66,10 +66,7 @@ export const About = () => {
           </div>
         </motion.div>
         <motion.div variants={textVariant} className="flex flex-col space-y-5 space-x-2 ">
-          <h1 className="text-blue-400 font-bold">ABOUT ME 😉</h1>
-          <h2 className={`${isToggle ? "text-white" : "text-slate-900"} text-2xl font-bold sm:text-center md:text-start`}>
-            Software Developer
-          </h2>
+          <h1 className="text-blue-400 pl-2 font-bold">ABOUT 😉</h1>
           <motion.p
             initial="offScreen"
             whileInView="onScreen"
@@ -95,7 +92,7 @@ export const About = () => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 2, type: "spring", bounce: 0.1 }}
         viewport={{ once: true }}
-        className="w-[600px]  h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
+        className="w-[600px] h-[600px] rounded-full bg-blue-300 absolute bottom-[-320px] left-[-320px]"></motion.div>
       <motion.div
         initial={{ scale: 0.1 }}
         whileInView={{ scale: 1 }}
